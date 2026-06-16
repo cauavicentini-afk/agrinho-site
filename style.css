@@ -1,0 +1,203 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafdfa;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: #eef7ee;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2e6f40;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h1 {
+    color: #2e6f40;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2e6f40;
+}
+
+/* Hero Banner */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Cards (Pilares) */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #2e6f40;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* Galeria / Carrossel Simples */
+.carousel {
+    background: #2e6f40;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 150px;
+}
+
+.carousel-item {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel-item.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.carousel-controls {
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background: white;
+    color: #2e6f40;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.carousel-controls button:hover {
+    background: #e67e22;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e4628;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
